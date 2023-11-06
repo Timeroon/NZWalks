@@ -101,7 +101,7 @@ namespace NZWalks.API.Controllers
             {
                 return NotFound();
             }
-
+             
             // Convert to DTO
             var walkDifficultyDTO = mapper.Map<Models.DTO.WalkDifficulty>(walkDifficultyDomain);
             return Ok(walkDifficultyDTO);
